@@ -153,8 +153,8 @@ func (a *agent) PreSleep() {
 }
 
 func (a *agent) reconnect() error {
-	a.Lock()
-	defer a.Unlock()
+//	a.Lock()
+//	defer a.Unlock()
 	conn, err := net.Dial(a.net, a.addr)
 	if err != nil {
 		return err
